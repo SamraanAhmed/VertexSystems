@@ -763,3 +763,10 @@ footer.note {
     margin-top: 14px;
     font-size: 12px;
 }
+
+/* YearWise listing improvements */
+.listing-title { font-size: 50px; }
+.listing-subtitle { font-size: 15px; }
+.filter-bar .form-label { font-weight: 600; }
+.metric { font-size: 13px; color: #0f172a; }
+.metric-label { font-weight: 600; margin-right: 4px; }
