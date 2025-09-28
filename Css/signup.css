@@ -1,4 +1,4 @@
-  :root {
+:root {
       --bg: #f6f7fb;
       --card: #fff;
       --muted: #6b7280;
@@ -17,7 +17,6 @@
       max-width: 860px;
       margin: 48px auto;
       padding: 20px;
-      margin-left: 456px;
   }
 
   .brand {
@@ -50,8 +49,11 @@
 
   .brand h1 {
       margin: 0;
-      font-size: 18px
+      font-size: 18px;
+      text-align: left;
   }
+
+  .signup-title { text-align: center; }
 
   .brand p {
       margin: 0;
@@ -63,6 +65,17 @@
       display: grid;
       grid-template-columns: 1fr 380px;
       gap: 18px
+  }
+
+  /* On signup page prefer a single centered column for the form */
+  .signup .box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .signup .card {
+    width: 100%;
+    max-width: 560px;
   }
 
   .card {
@@ -278,3 +291,18 @@ input {
     text-align: center
 }
 
+/* Responsive adjustments for signup */
+@media (max-width: 768px) {
+  .signup { margin: 24px 16px; padding: 16px; }
+  .box { grid-template-columns: 1fr; gap: 12px; }
+  .row { flex-direction: column; }
+  .cta { flex-direction: column; gap: 10px; }
+  .bttn, .btn.ghost { width: 100%; text-align: center; }
+  .brand { justify-content: center; }
+  .brand h1 { text-align: center; }
+}
+
+@media (min-width: 769px) {
+  /* ensure the signup card sits centered vertically in its container */
+  .signup { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 180px); }
+}
