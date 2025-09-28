@@ -775,10 +775,13 @@ footer.note {
 section#services .card { display: flex; flex-direction: column; }
 section#services .card p { margin-bottom: 12px; }
 section#services .card .btn {
-    margin-top: auto;
-    align-self: center;
+    margin-top: auto !important;
+    align-self: center !important;
     min-width: 160px;
 }
+
+/* Also ensure any bootstrap utility margins don't break vertical alignment */
+section#services .card .btn.mt-3 { margin-top: 0 !important; }
 
 /* Make CTAs full width on small screens for easier tapping */
 @media (max-width: 576px) {
