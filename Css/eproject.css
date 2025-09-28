@@ -763,3 +763,28 @@ footer.note {
     margin-top: 14px;
     font-size: 12px;
 }
+
+/* YearWise listing improvements */
+.listing-title { font-size: 50px; }
+.listing-subtitle { font-size: 15px; }
+.filter-bar .form-label { font-weight: 600; }
+.metric { font-size: 13px; color: #0f172a; }
+.metric-label { font-weight: 600; margin-right: 4px; }
+
+/* Services (Help) page: ensure CTA buttons align at card bottom */
+section#services .card { display: flex; flex-direction: column; }
+section#services .card p { margin-bottom: 12px; }
+section#services .card .btn {
+    margin-top: auto !important;
+    align-self: center !important;
+    min-width: 160px;
+}
+
+/* Also ensure any bootstrap utility margins don't break vertical alignment */
+section#services .card .btn.mt-3 { margin-top: 0 !important; }
+
+/* Make CTAs full width on small screens for easier tapping */
+@media (max-width: 576px) {
+  section#services .card { padding: 1.25rem; }
+  section#services .card .btn { width: 100%; max-width: 100%; }
+}
