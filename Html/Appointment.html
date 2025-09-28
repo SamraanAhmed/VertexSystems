@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Vertex Systems</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../Css/eproject.css">
-</head>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../Css/eproject.css">
+<link rel="stylesheet" href="../Css/Appointment.css">
 
 <body class="body">
-  <!-- Navbar -->
+    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg text-white fixed-top">
     <div class="container-fluid">
       <a href="Home.html">
@@ -83,100 +83,135 @@
     </div>
   </nav>
 
-  <br><br><br><br>
+    <br><br><br><br>
+    <!-- Main Heading -->
+    <div class="header">
+        <h1>Book Your Doctor Appointment</h1>
+        <p>Schedule a consultation with our experienced doctors for personalized care.</p>
+    </div>
+    <!-- Form -->
+    <div class="form-container">
+        <h2>Book Appointment</h2>
+        <form id="simple-appointment-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-  <!-- Services Section -->
-  <section id="services" class="py-5 mt-5 bg-white">
+             <label for="name">Last Name</label>
+            <input type="text" id="name" name="name" required>
+
+             <label for="name">Email</label>
+            <input type="text" id="email" name="email" required>
+
+             <label for="name">Password</label>
+            <input type="text" id="Password" name="Password" required>
+
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+
+            <label for="doctor">Doctor's</label>
+            <select id="doctor" name="doctor">
+                <option>Specialist Dr</option>
+                <option>Dr Ali</option>
+                <option>Dr Jaffar</option>
+                <option>Dr Aun </option>
+                <option>Dr Sara</option>
+                <option>Dr Amal</option>
+                <option>Dr Ayesha</option>
+            </select>
+
+
+            <label for="reason">Reason for Visit</label>
+            <textarea id="reason" name="reason" rows="3"></textarea>
+
+
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    </div>
+    <!-- Appointment Cards Section -->
+    <section class=" bg-opacity-10 py-5">
     <div class="container">
       <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold">Our Services</h1>
-        <p class="text-muted fs-5">Comprehensive tools and resources to help you stay informed and healthy.</p>
+        <h2 class="display-5 fw-bold">Specialist Doctor</h2>
+        <p class="text-muted fs-5">Dedicated professionals working to keep you informed and healthy.</p>
       </div>
-
-      <!-- Services Grid -->
       <div class="row g-4">
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-stethoscope fa-3x text-primary"></i>
+          <div class="card text-center">
+            <img src="../Images/dr1 (1).jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr eshal</h5>
+              <p class="text-muted">Cheast Infection</p>
+              <p>Expert in virology with over 15 years of experience in infectious disease research.</p>
             </div>
-            <h3 class="h4 fw-bold mb-3">Symptom Checker</h3>
-            <p class="text-muted">Use our interactive tool to input symptoms and identify potential viral infections,
-              with guidance on next steps.</p>
-            <a href="https://dxgpt.app/?gad_source=1&gad_campaignid=22143667638&gbraid=0AAAAA-skLxtsexGawkgvbJT4VoQAL6SIu&gclid=EAIaIQobChMIhoPnytDxjwMVo6f9BR28Fh9yEAAYASAAEgLz7vD_BwE"
-              class="btn btn-primary">Start Check</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-syringe fa-3x text-success"></i>
+          <div class="card text-center">
+            <img src="../Images/dr .jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Amal</h5>
+              <p class="text-muted">Skin Infection Specialist</p>
+              <p>Leads community outreach and prevention programs for viral infections.</p>
             </div>
-            <h3 class="h4 fw-bold mb-3">Vaccination Finder</h3>
-            <p class="text-muted">Locate nearby clinics and access vaccination schedules for flu, COVID-19, HPV, and
-              other preventable viruses.</p>
-            <a href="https://vaccinefinder.org/" class="btn btn-success rounded-5 mt-3">Find Clinics</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-book-open fa-3x text-danger"></i>
+          <div class="card text-center">
+            <img src="../Images/sara2 .jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Minal</h5>
+              <p class="text-muted">Technology Lead</p>
+              <p>Designs user-friendly tools to make health information accessible to all.</p>
             </div>
-            <h3 class="h4 fw-bold mb-3">Educational Resources</h3>
-            <p class="text-muted">Access detailed guides, articles, and videos on virus prevention, treatment, and
-              management.</p>
-            <a href="https://my.clevelandclinic.org/health/body/24861-virus" class="btn btn-danger rounded-5 ">Explore
-              Resources</a>
+          </div>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/ap1.png" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Ali</h5>
+              <p class="text-muted">Eyes Infection</p>
+              <p>Expert in virology with over 15 years of experience in infectious disease research.</p>
+            </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-users fa-3x text-primary"></i>
+          <div class="card text-center">
+            <img src="../Images/ap2.jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Abbas</h5>
+              <p class="text-muted">Lungs Infection</p>
+              <p>Leads community outreach and prevention programs for viral infections.</p>
             </div>
-            <h3 class="h4 fw-bold mb-3">Community Support</h3>
-            <p class="text-muted">Join our forums to connect with others, share experiences, and get advice from health
-              experts.</p>
-            <a href="#" class="btn btn-primary rounded-5 ">Join Community</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-heartbeat fa-3x text-success"></i>
+          <div class="card text-center">
+            <img src="../Images/ap3.png" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Aun</h5>
+              <p class="text-muted">Flu Infection</p>
+              <p>Designs user-friendly tools to make health information accessible to all.</p>
             </div>
-            <h3 class="h4 fw-bold mb-3">Health Monitoring</h3>
-            <p class="text-muted">Track your health metrics and receive personalized tips to prevent viral infections.
-            </p>
-            <a href="#" class="btn btn-success rounded-5 ">Start Monitoring</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card h-100 text-center p-4 border rounded-3 shadow-sm">
-            <div class="mb-3">
-              <i class="fas fa-newspaper fa-3x text-danger"></i>
-            </div>
-            <h3 class="h4 fw-bold mb-3">Weekly Health Updates</h3>
-            <p class="text-muted">Subscribe to our newsletter for the latest news on viruses and patient care tips.</p>
-            <a href="#" class="btn btn-danger rounded-5 ">Subscribe Now</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Call to Action -->
-  <section class="py-5 bg-primary bg-opacity-10">
-    <div class="container text-center">
-      <h2 class="h2 fw-bold mb-4">Take Control of Your Health</h2>
-      <p class="text-muted fs-5 mb-4">Explore our services to stay informed, prevent infections, and connect with our
-        community.</p>
-      <a href="Booking.html" class="btn btn-primary btn-lg">Get Started</a>
-    </div>
-  </section>
-
-  <footer class="footer py-5 mt-5">
+       <footer class="footer py-5 mt-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -213,8 +248,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- Bootstrap JS -->
+      <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
