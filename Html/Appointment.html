@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../Css/eproject.css">
+<link rel="stylesheet" href="../Css/Appointment.css">
+
+<body class="body">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  text-white fixed-top">
+        <div class="container-fluid"><a href="Home.html">
+                <img src="download.jpg" class=" cat1 rounded-5" alt="error"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="main">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <h1>Vertex Systems</h1>
+                </div>
+                <div class="hab">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Services.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="YearWiseList.html">YearWiseListing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Appointment.html">Appointment</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Sign up & Login -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Login.htm">Login</a>
+                    </li>
+                    <li class="Signup">
+                        <a class="nav-link active" aria-current="page" href="Signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+    <!-- Main Heading -->
+    <div class="header">
+        <h1>Book Your Doctor Appointment</h1>
+        <p>Schedule a consultation with our experienced doctors for personalized care.</p>
+    </div>
+    <!-- Form -->
+    <div class="form-container">
+        <h2>Book Appointment</h2>
+        <form id="simple-appointment-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+             <label for="name">Last Name</label>
+            <input type="text" id="name" name="name" required>
+
+             <label for="name">Email</label>
+            <input type="text" id="email" name="email" required>
+
+             <label for="name">Password</label>
+            <input type="text" id="Password" name="Password" required>
+
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+
+            <label for="doctor">Doctor's</label>
+            <select id="doctor" name="doctor">
+                <option>Specialist Dr</option>
+                <option>Dr Ali</option>
+                <option>Dr Jaffar</option>
+                <option>Dr Aun </option>
+                <option>Dr Sara</option>
+                <option>Dr Amal</option>
+                <option>Dr Ayesha</option>
+            </select>
+
+
+            <label for="reason">Reason for Visit</label>
+            <textarea id="reason" name="reason" rows="3"></textarea>
+
+
+            <button type="submit">Confirm Appointment</button>
+        </form>
+    </div>
+    <!-- Appointment Cards Section -->
+    <section class=" bg-opacity-10 py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold">Specialist Doctor</h2>
+        <p class="text-muted fs-5">Dedicated professionals working to keep you informed and healthy.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/dr1 (1).jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr eshal</h5>
+              <p class="text-muted">Cheast Infection</p>
+              <p>Expert in virology with over 15 years of experience in infectious disease research.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/dr .jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Amal</h5>
+              <p class="text-muted">Skin Infection Specialist</p>
+              <p>Leads community outreach and prevention programs for viral infections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/sara2 .jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Minal</h5>
+              <p class="text-muted">Technology Lead</p>
+              <p>Designs user-friendly tools to make health information accessible to all.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/ap1.png" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Ali</h5>
+              <p class="text-muted">Eyes Infection</p>
+              <p>Expert in virology with over 15 years of experience in infectious disease research.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/ap2.jpg" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Abbas</h5>
+              <p class="text-muted">Lungs Infection</p>
+              <p>Leads community outreach and prevention programs for viral infections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card text-center">
+            <img src="../Images/ap3.png" class="card-img-top rounded-circle img-thumbnail mx-auto mt-3" alt="Team Member" style="width: 200px; height: 200px;">
+            <div class="card-body">
+              <h5 class="card-title">Dr Aun</h5>
+              <p class="text-muted">Flu Infection</p>
+              <p>Designs user-friendly tools to make health information accessible to all.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+       <footer class="footer py-5 mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h3 class="mb-3">Vertex Systems</h3>
+          <p>Empowering patients with reliable information about viruses, symptoms, treatments, and prevention
+            strategies for better health outcomes.</p>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="Home.html" class="text-white-50">Home</a></li>
+                <li><a href="About.html" class="text-white-50">About</a></li>
+                <li><a href="Services.html" class="text-white-50">Services</a></li>
+                <li><a href="Contact.html" class="text-white-50">Contact</a></li>
+                <li><a href="YearWiseList.html" class="text-white-50">YearWiseListing</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <h5>Follow Us</h5>
+              <div class="social-links">
+                <a href="https://www.facebook.com/" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="x.com" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Vertex Systems. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+      <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
