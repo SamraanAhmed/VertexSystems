@@ -304,5 +304,5 @@ input {
 
 @media (min-width: 769px) {
   /* ensure the signup card sits centered vertically in its container */
-  .signup { display: block; }
+  .signup { display: flex; align-items: center; justify-content: center; min-height: calc(100vh - 180px); }
 }
