@@ -49,8 +49,11 @@
 
   .brand h1 {
       margin: 0;
-      font-size: 18px
+      font-size: 18px;
+      text-align: left;
   }
+
+  .signup-title { text-align: center; }
 
   .brand p {
       margin: 0;
@@ -62,6 +65,17 @@
       display: grid;
       grid-template-columns: 1fr 380px;
       gap: 18px
+  }
+
+  /* On signup page prefer a single centered column for the form */
+  .signup .box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .signup .card {
+    width: 100%;
+    max-width: 560px;
   }
 
   .card {
@@ -286,4 +300,9 @@ input {
   .bttn, .btn.ghost { width: 100%; text-align: center; }
   .brand { justify-content: center; }
   .brand h1 { text-align: center; }
+}
+
+@media (min-width: 769px) {
+  /* ensure the signup card sits centered vertically in its container */
+  .signup { display: block; }
 }
