@@ -86,3 +86,8 @@ background: #23cc9f;
     font-size: 20px;
     color: white;
 }
+.doctor-avatar{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
