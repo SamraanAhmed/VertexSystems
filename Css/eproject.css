@@ -770,3 +770,18 @@ footer.note {
 .filter-bar .form-label { font-weight: 600; }
 .metric { font-size: 13px; color: #0f172a; }
 .metric-label { font-weight: 600; margin-right: 4px; }
+
+/* Services (Help) page: ensure CTA buttons align at card bottom */
+section#services .card { display: flex; flex-direction: column; }
+section#services .card p { margin-bottom: 12px; }
+section#services .card .btn {
+    margin-top: auto;
+    align-self: center;
+    min-width: 160px;
+}
+
+/* Make CTAs full width on small screens for easier tapping */
+@media (max-width: 576px) {
+  section#services .card { padding: 1.25rem; }
+  section#services .card .btn { width: 100%; max-width: 100%; }
+}
