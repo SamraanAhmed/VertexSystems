@@ -1,4 +1,4 @@
-  :root {
+:root {
       --bg: #f6f7fb;
       --card: #fff;
       --muted: #6b7280;
@@ -17,7 +17,6 @@
       max-width: 860px;
       margin: 48px auto;
       padding: 20px;
-      margin-left: 456px;
   }
 
   .brand {
@@ -278,3 +277,13 @@ input {
     text-align: center
 }
 
+/* Responsive adjustments for signup */
+@media (max-width: 768px) {
+  .signup { margin: 24px 16px; padding: 16px; }
+  .box { grid-template-columns: 1fr; gap: 12px; }
+  .row { flex-direction: column; }
+  .cta { flex-direction: column; gap: 10px; }
+  .bttn, .btn.ghost { width: 100%; text-align: center; }
+  .brand { justify-content: center; }
+  .brand h1 { text-align: center; }
+}
